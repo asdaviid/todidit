@@ -4,9 +4,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
   <title>todidit</title>
 </head>
 <body>
-  <div>todidit</div>
+  <div class="container">
+    <header class="header">
+      <div class="header__text">todidit</div>
+      <div class="header__breadcrumb">
+        <span class="header__breadcrumb-line">&nbsp;</span>
+      </div>
+    </header>
+
+    <main>
+      <div class="todos-section">
+        <div class="form">
+          <div class="form__group">
+            <input id="todo" type="text" placeholder="Please type here..." class="form__input">
+          </div>
+        </div>
+
+        <div class="todos">
+          <ul class="todo-list">
+            <li class="todo-list-item">
+              <span>Plantain</span>
+              <input type="checkbox" class="todo-list-item__check-item">
+              <span class="todo-list-item__check-button">&nbsp;</span>
+            </li>
+            <li class="todo-list-item">
+              <span>Eggs</span>
+              <input type="checkbox" class="todo-list-item__check-item">
+              <span class="todo-list-item__check-button">&nbsp;</span>
+            </li>
+            <li class="todo-list-item">
+              <span>Bread and Milk</span>
+              <input type="checkbox" class="todo-list-item__check-item">
+              <span class="todo-list-item__check-button">&nbsp;</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>This is an implementation of <a href="https://twitter.com/as_daviid" target="_blank">@as_daviid</a></p>
+
+      <p>&copy; versecom 2019</p>
+    </footer>
+  </div>
 </body>
 </html>

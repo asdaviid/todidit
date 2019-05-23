@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  border: 0; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  background-color: #fbfbfb;
+  font-family: 'Roboto', sans-serif; }
+
+.container {
+  width: 55rem;
+  margin: 0 auto;
+  padding: 2.5rem; }
+
+.header {
+  display: flex;
+  width: 50rem;
+  justify-content: space-between;
+  align-items: center;
+  color: #1878e8; }
+  .header__text {
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-transform: uppercase; }
+  .header__breadcrumb {
+    text-align: center;
+    position: relative; }
+    .header__breadcrumb-line, .header__breadcrumb-line::before, .header__breadcrumb-line::after {
+      width: 3rem;
+      height: 5px;
+      border-radius: 5px;
+      background-color: #1878e8;
+      display: inline-block; }
+    .header__breadcrumb-line::before, .header__breadcrumb-line::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all .3s; }
+    .header__breadcrumb-line::before {
+      top: -.8rem; }
+    .header__breadcrumb-line::after {
+      top: .8rem; }
+
+.todos-section {
+  margin-top: 4rem;
+  font-size: 1.8rem;
+  width: 50rem; }
+
+.form {
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.15);
+  border-radius: .8rem; }
+  .form__input {
+    width: 94%;
+    height: 7.5rem;
+    border: none;
+    padding: 2.5rem;
+    border-radius: .8rem;
+    outline: none;
+    font-size: inherit; }
+
+.todos {
+  margin-top: 2rem;
+  border-radius: .8rem;
+  background-color: white;
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.15);
+  padding: 0 2.5rem; }
+
+.todo-list {
+  list-style: none;
+  padding: 0; }
+  .todo-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 2.5rem 0;
+    text-align: start;
+    position: relative; }
+    .todo-list-item__check-item {
+      display: none;
+      cursor: pointer; }
+    .todo-list-item__check-button::after {
+      content: "";
+      width: 2.5rem;
+      height: 2.5rem;
+      border: 1px solid #777;
+      cursor: pointer;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      right: -3%;
+      transform: translate(-50%, -50%);
+      z-index: 10000; }
+    .todo-list-item:not(:last-child) {
+      border-bottom: 1px solid rgba(51, 51, 51, 0.1); }
+
+.footer {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  color: #777;
+  font-size: 1.4rem; }
+  .footer a {
+    text-decoration: none; }
+    .footer a:visited, .footer a:link {
+      color: #1878e8; }
