@@ -12,13 +12,20 @@ html {
   font-size: 62.5%; }
 
 body {
+  display: flex;
+  justify-content: center;
   background-color: #fbfbfb;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh; }
 
 .container {
-  width: 55rem;
-  margin: 0 auto;
-  padding: 2.5rem; }
+  display: flex;
+  flex-direction: column;
+  width: 50rem;
+  margin-top: 5rem; }
+
+main {
+  margin-bottom: auto; }
 
 .header {
   display: flex;
@@ -103,7 +110,7 @@ body {
       border-bottom: 1px solid rgba(51, 51, 51, 0.1); }
 
 .footer {
-  margin-top: 5rem;
+  margin: 5rem 0 2rem 0;
   display: flex;
   justify-content: space-between;
   color: #777;

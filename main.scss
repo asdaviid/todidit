@@ -19,14 +19,22 @@ html {
 }
 
 body {
+  display: flex;
+  justify-content: center;
   background-color: rgb(251, 251, 251);
   font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
 }
 
 .container {
-  width: 55rem;
-  margin: 0 auto;
-  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 50rem;
+  margin-top: 5rem;
+}
+
+main {
+  margin-bottom: auto;
 }
 
 .header {
@@ -154,7 +162,7 @@ body {
 }
 
 .footer {
-  margin-top: 5rem;
+  margin: 5rem 0 2rem 0;
   display: flex;
   justify-content: space-between;
   color: #777;
